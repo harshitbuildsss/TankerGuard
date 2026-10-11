@@ -28,3 +28,5 @@ export const updateIncident = (id, status, note = '') => api(`/api/incidents/${i
   method: 'PATCH', body: JSON.stringify({ status, note }),
 });
 export const getHealth = () => api('/api/health');
+export const getTelemetry = (tankerId) =>
+  api(`/api/telemetry/${encodeURIComponent(tankerId)}`);
