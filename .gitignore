@@ -1,0 +1,35 @@
+﻿# Java / Maven
+backend/target/
+backend/data/
+backend/*.log
+*.class
+
+# Local H2 databases
+data/
+**/tankerdb.mv.db
+**/tankerdb.trace.db
+*.mv.db
+*.trace.db
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Environment files — keep examples tracked
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local database backups and working-file backups
+database-backup-*/
+*.backup-*
+README.backup-*.md
